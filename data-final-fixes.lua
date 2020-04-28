@@ -8,6 +8,7 @@ for k, robot in pairs(data.raw["logistic-robot"]) do
   robot.shadow_idle_with_cargo = nil
   robot.shadow_in_motion_with_cargo = nil
   robot.draw_cargo = false
+  robot.water_reflection = nil
 end
 
 for k, robot in pairs(data.raw["construction-robot"]) do
@@ -21,4 +22,5 @@ for k, robot in pairs(data.raw["construction-robot"]) do
   robot.sparks = nil
   robot.working_light = nil
   robot.draw_cargo = false
+  robot.water_reflection = nil
 end
