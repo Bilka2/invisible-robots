@@ -1,34 +1,24 @@
-local function empty()
-  return
-  {
-    frame_count = 1,
-    direction_count = 1,
-    filename = "__core__/graphics/empty.png",
-    size = 1
-  }
-end
-
 for k, robot in pairs(data.raw["logistic-robot"]) do
-  robot.shadow_in_motion = empty()
-  robot.in_motion = empty()
-  robot.shadow_idle = empty()
-  robot.idle = empty()
-  robot.idle_with_cargo = empty()
-  robot.in_motion_with_cargo = empty()
-  robot.shadow_idle_with_cargo = empty()
-  robot.shadow_in_motion_with_cargo = empty()
+  robot.shadow_in_motion = nil
+  robot.in_motion = nil
+  robot.shadow_idle = nil
+  robot.idle = nil
+  robot.idle_with_cargo = nil
+  robot.in_motion_with_cargo = nil
+  robot.shadow_idle_with_cargo = nil
+  robot.shadow_in_motion_with_cargo = nil
   robot.draw_cargo = false
 end
 
 for k, robot in pairs(data.raw["construction-robot"]) do
-  robot.shadow_in_motion = empty()
-  robot.in_motion = empty()
-  robot.shadow_idle = empty()
-  robot.idle = empty()
-  robot.shadow_working = empty()
-  robot.working = empty()
-  robot.smoke = empty()
+  robot.shadow_in_motion = nil
+  robot.in_motion = nil
+  robot.shadow_idle = nil
+  robot.idle = nil
+  robot.shadow_working = nil
+  robot.working = nil
+  robot.smoke = nil
   robot.sparks = nil
   robot.working_light = nil
   robot.draw_cargo = false
-end 
+end
