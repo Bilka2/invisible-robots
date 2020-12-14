@@ -4,5 +4,13 @@
   "title": "Invisible worker robots",
   "author": "Bilka",
   "description": "Makes the worker robots and their cargo invisible.",
-  "factorio_version": "1.1"
+  "factorio_version": "1.1",
+  "package":
+  { 
+    "scripts":
+    {
+      "prepackage": "./scripts/extract_changes.sh",
+      "postpublish": "./scripts/github_release.sh"
+    }
+  }
 }
